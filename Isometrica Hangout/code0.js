@@ -11,13 +11,19 @@ gdjs.MyGameCode.GDAvatarObjects3= [];
 gdjs.MyGameCode.GDObstacleObjects1= [];
 gdjs.MyGameCode.GDObstacleObjects2= [];
 gdjs.MyGameCode.GDObstacleObjects3= [];
+gdjs.MyGameCode.GDNewObjectObjects1= [];
+gdjs.MyGameCode.GDNewObjectObjects2= [];
+gdjs.MyGameCode.GDNewObjectObjects3= [];
+gdjs.MyGameCode.GDsteponObjects1= [];
+gdjs.MyGameCode.GDsteponObjects2= [];
+gdjs.MyGameCode.GDsteponObjects3= [];
 
 gdjs.MyGameCode.conditionTrue_0 = {val:false};
 gdjs.MyGameCode.condition0IsTrue_0 = {val:false};
 gdjs.MyGameCode.condition1IsTrue_0 = {val:false};
 
 
-gdjs.MyGameCode.eventsList0x69db20 = function(runtimeScene) {
+gdjs.MyGameCode.eventsList0x693058 = function(runtimeScene) {
 
 {
 
@@ -120,8 +126,8 @@ gdjs.MyGameCode.GDMindaObjects2.length = k;}if (gdjs.MyGameCode.condition0IsTrue
 }
 
 
-}; //End of gdjs.MyGameCode.eventsList0x69db20
-gdjs.MyGameCode.eventsList0x69d5b8 = function(runtimeScene) {
+}; //End of gdjs.MyGameCode.eventsList0x693058
+gdjs.MyGameCode.eventsList0x692ac8 = function(runtimeScene) {
 
 {
 
@@ -185,14 +191,14 @@ gdjs.MyGameCode.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonPresse
 }if (gdjs.MyGameCode.condition0IsTrue_0.val) {
 
 { //Subevents
-gdjs.MyGameCode.eventsList0x69db20(runtimeScene);} //End of subevents
+gdjs.MyGameCode.eventsList0x693058(runtimeScene);} //End of subevents
 }
 
 }
 
 
-}; //End of gdjs.MyGameCode.eventsList0x69d5b8
-gdjs.MyGameCode.mapOfGDgdjs_46MyGameCode_46GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.MyGameCode.GDObstacleObjects1});gdjs.MyGameCode.eventsList0x694508 = function(runtimeScene) {
+}; //End of gdjs.MyGameCode.eventsList0x692ac8
+gdjs.MyGameCode.mapOfGDgdjs_46MyGameCode_46GDObstacleObjects1Objects = Hashtable.newFrom({"Obstacle": gdjs.MyGameCode.GDObstacleObjects1});gdjs.MyGameCode.eventsList0x693b40 = function(runtimeScene) {
 
 {
 
@@ -231,8 +237,8 @@ gdjs.MyGameCode.GDObstacleObjects1.createFrom(runtimeScene.getObjects("Obstacle"
 }
 
 
-}; //End of gdjs.MyGameCode.eventsList0x694508
-gdjs.MyGameCode.eventsList0x694a30 = function(runtimeScene) {
+}; //End of gdjs.MyGameCode.eventsList0x693b40
+gdjs.MyGameCode.eventsList0x68af78 = function(runtimeScene) {
 
 {
 
@@ -245,27 +251,52 @@ gdjs.MyGameCode.GDMindaObjects1.createFrom(runtimeScene.getObjects("Minda"));
 }
 
 
-}; //End of gdjs.MyGameCode.eventsList0x694a30
-gdjs.MyGameCode.eventsList0xb25a8 = function(runtimeScene) {
+}; //End of gdjs.MyGameCode.eventsList0x68af78
+gdjs.MyGameCode.eventsList0x690db8 = function(runtimeScene) {
+
+}; //End of gdjs.MyGameCode.eventsList0x690db8
+gdjs.MyGameCode.mapOfGDgdjs_46MyGameCode_46GDMindaObjects1Objects = Hashtable.newFrom({"Minda": gdjs.MyGameCode.GDMindaObjects1});gdjs.MyGameCode.mapOfGDgdjs_46MyGameCode_46GDsteponObjects1Objects = Hashtable.newFrom({"stepon": gdjs.MyGameCode.GDsteponObjects1});gdjs.MyGameCode.eventsList0xb25a8 = function(runtimeScene) {
 
 {
 
 
-gdjs.MyGameCode.eventsList0x69d5b8(runtimeScene);
+gdjs.MyGameCode.eventsList0x692ac8(runtimeScene);
 }
 
 
 {
 
 
-gdjs.MyGameCode.eventsList0x694508(runtimeScene);
+gdjs.MyGameCode.eventsList0x693b40(runtimeScene);
 }
 
 
 {
 
 
-gdjs.MyGameCode.eventsList0x694a30(runtimeScene);
+gdjs.MyGameCode.eventsList0x68af78(runtimeScene);
+}
+
+
+{
+
+
+gdjs.MyGameCode.eventsList0x690db8(runtimeScene);
+}
+
+
+{
+
+gdjs.MyGameCode.GDMindaObjects1.createFrom(runtimeScene.getObjects("Minda"));
+gdjs.MyGameCode.GDsteponObjects1.createFrom(runtimeScene.getObjects("stepon"));
+
+gdjs.MyGameCode.condition0IsTrue_0.val = false;
+{
+gdjs.MyGameCode.condition0IsTrue_0.val = gdjs.evtTools.object.hitBoxesCollisionTest(gdjs.MyGameCode.mapOfGDgdjs_46MyGameCode_46GDMindaObjects1Objects, gdjs.MyGameCode.mapOfGDgdjs_46MyGameCode_46GDsteponObjects1Objects, false, runtimeScene, true);
+}if (gdjs.MyGameCode.condition0IsTrue_0.val) {
+{gdjs.evtTools.window.openURL("http://streamsearch.cf/", runtimeScene);
+}}
+
 }
 
 
@@ -286,6 +317,12 @@ gdjs.MyGameCode.GDAvatarObjects3.length = 0;
 gdjs.MyGameCode.GDObstacleObjects1.length = 0;
 gdjs.MyGameCode.GDObstacleObjects2.length = 0;
 gdjs.MyGameCode.GDObstacleObjects3.length = 0;
+gdjs.MyGameCode.GDNewObjectObjects1.length = 0;
+gdjs.MyGameCode.GDNewObjectObjects2.length = 0;
+gdjs.MyGameCode.GDNewObjectObjects3.length = 0;
+gdjs.MyGameCode.GDsteponObjects1.length = 0;
+gdjs.MyGameCode.GDsteponObjects2.length = 0;
+gdjs.MyGameCode.GDsteponObjects3.length = 0;
 
 gdjs.MyGameCode.eventsList0xb25a8(runtimeScene);
 return;
